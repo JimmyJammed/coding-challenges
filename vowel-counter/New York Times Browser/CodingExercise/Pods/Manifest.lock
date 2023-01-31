@@ -1,0 +1,21 @@
+PODS:
+  - DZNEmptyDataSet (1.7.1)
+  - MBProgressHUD (0.9.1)
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
+  - SVPullToRefresh (0.4.1)
+
+DEPENDENCIES:
+  - DZNEmptyDataSet
+  - MBProgressHUD
+  - SDWebImage
+  - SVPullToRefresh
+
+SPEC CHECKSUMS:
+  DZNEmptyDataSet: 2a398066c2bf5848f7f693fb50954b5064debd12
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
+
+COCOAPODS: 0.38.2
