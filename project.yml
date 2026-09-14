@@ -1,0 +1,38 @@
+name: CodingChallenges
+options:
+  bundleIdPrefix: biz.hickman
+packages:
+  ChallengeKit:
+    path: .
+settings:
+  SWIFT_VERSION: "6.0"
+targets:
+  CodingChallenges:
+    type: application
+    platform: iOS
+    deploymentTarget: "18.0"
+    sources: [Demo]
+    dependencies:
+      - package: ChallengeKit
+    settings:
+      GENERATE_INFOPLIST_FILE: YES
+      INFOPLIST_KEY_UILaunchScreen_Generation: YES
+      INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+      TARGETED_DEVICE_FAMILY: "1,2"
+  CodingChallengesUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    deploymentTarget: "18.0"
+    sources: [DemoUITests]
+    dependencies:
+      - target: CodingChallenges
+    settings:
+      GENERATE_INFOPLIST_FILE: YES
+schemes:
+  CodingChallenges:
+    build:
+      targets:
+        CodingChallenges: all
+        CodingChallengesUITests: [test]
+    test:
+      targets: [CodingChallengesUITests]
